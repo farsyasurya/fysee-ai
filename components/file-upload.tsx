@@ -20,7 +20,7 @@ import { getAiResult } from "@/actions/getAiResult";
 interface FileUploadProps {
   value?: FileWithReview[];
   onChange?: (files: FileWithReview[]) => void;
-  onRemove?: (file: FileWithReview) => void;
+  onRemove?: (file: FileWithReview[]) => void;
   maxFiles?: number;
   maxSize?: number;
   accept?: { [key: string]: string[] };
@@ -130,7 +130,6 @@ const FileUpload = ({
       const updatedFiles = files.filter((f) => f.file !== fileToRemove.file);
       setFiles(updatedFiles);
       onChange?.(updatedFiles);
-      onRemove?.(fileToRemove);
     },
     [files, onRemove, onChange]
   );

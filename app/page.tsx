@@ -3,29 +3,33 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="w-full max-w-2xl mx-auto text-center">
+    <main
+      className="flex min-h-screen w-full flex-col items-center justify-between p-6 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/bg2.jpg')" }}
+    >
+      <div className="w-full max-w-2xl mx-auto text-center bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
         {/* Logo */}
         <img
           src="/fysee.png"
-          alt="Fysee AI Logo"
-          className="mx-auto mb-6 w-50 h-44 object-contain rounded-xl"
+          alt="Fysee Math Solver Logo"
+          className="mx-auto mb-6 w-40 h-32 object-contain rounded-xl"
         />
 
         {/* Nama Aplikasi */}
-        <h1 className="text-3xl font-bold mb-4">Fysee-ai</h1>
+        <h1 className="text-3xl font-bold mb-4">Fysee-Math</h1>
 
         {/* Deskripsi Aplikasi */}
-        <p className="text-lg text-muted-foreground mb-8">
-          Aplikasi pembuat deskripsi tentang gambar secara otomatis dengan
-          bantuan AI.
+        <p className="text-lg text-gray-700 mb-8">
+          Aplikasi pintar yang membantu menyelesaikan soal matematika dari
+          gambar. Unggah soalmu, dan biarkan AI memberikan jawaban beserta
+          langkah-langkah penyelesaiannya.
         </p>
 
         {/* File Upload */}
         <FileUploadContainer />
 
         {/* Footer */}
-        <footer className="mt-10 text-sm text-muted-foreground">
+        <footer className="mt-10 text-sm text-gray-600">
           © {new Date().getFullYear()} Muhammad Farsya Surya
         </footer>
       </div>

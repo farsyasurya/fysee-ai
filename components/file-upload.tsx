@@ -144,11 +144,20 @@ const FileUpload = ({
 
   return (
     <div className="flex flex-col gap-5">
-      {aiResult && <p>{aiResult}</p>}
+      {aiResult && (
+        <div className="bg-white p-3">
+          <h1 className="text-lg mb-4 font-bold">Jawaban : </h1>
+          <p className="text-justify leading-relaxed whitespace-pre-line">
+            {aiResult}
+          </p>
+        </div>
+      )}
       <Textarea
         rows={10}
         value={prompt}
         onChange={(e) => setPrompt(e.target.value)}
+        className="bg-white"
+        placeholder="Description"
       />
       <Card>
         <CardHeader>
@@ -170,9 +179,7 @@ const FileUpload = ({
             <input {...getInputProps()} />
             <div className="flex flex-col items-center justify-center text-center">
               <Upload className="size-8 mb-2 text-muted-foreground " />
-              <p className="text-sm font-medium">
-                Drag files here or click to upload
-              </p>
+              <p className="text-sm font-medium">Upload soal mu disni</p>
             </div>
           </div>
 

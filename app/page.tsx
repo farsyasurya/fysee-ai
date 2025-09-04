@@ -11,18 +11,18 @@ export default function Home() {
         {/* Logo */}
         <img
           src="/fysee.png"
-          alt="Fysee Math Solver Logo"
+          alt="Fysee OCR Logo"
           className="mx-auto mb-6 w-40 h-32 object-contain rounded-xl"
         />
 
         {/* Nama Aplikasi */}
-        <h1 className="text-3xl font-bold mb-4">Fysee-Math</h1>
+        <h1 className="text-3xl font-bold mb-4">Fysee OCR</h1>
 
         {/* Deskripsi Aplikasi */}
         <p className="text-lg text-gray-700 mb-8">
-          Aplikasi pintar yang membantu menyelesaikan soal matematika dari
-          gambar. Unggah soalmu, dan biarkan AI memberikan jawaban beserta
-          langkah-langkah penyelesaiannya.
+          Aplikasi AI yang dapat mengubah teks dari gambar menjadi tulisan yang
+          bisa kamu salin dan gunakan kembali. Cukup unggah gambar, dan biarkan
+          AI mengekstrak teksnya untukmu.
         </p>
 
         {/* File Upload */}

@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main
-      className="flex min-h-screen w-full flex-col items-center justify-between p-6 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundColor: "Highlight" }}
-    >
+    <main className="flex min-h-screen w-full flex-col items-center justify-between p-6 relative overflow-hidden">
+      {/* Background animasi */}
+      <div className="absolute inset-0 -z-10 animate-gradient bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
+
       <div className="w-full max-w-2xl mx-auto text-center bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
         {/* Logo */}
         <img

@@ -19,7 +19,7 @@ export default function Home() {
         <h1 className="text-3xl font-bold mb-4">Fysee OCR</h1>
 
         {/* Deskripsi Aplikasi */}
-        <p className="text-lg text-gray-700 mb-8">
+        <p className="text-lg text-gray-700 mb-8 text-justify">
           Aplikasi AI yang dapat mengubah teks dari gambar menjadi tulisan yang
           bisa kamu salin dan gunakan kembali. Cukup unggah gambar, dan biarkan
           AI mengekstrak teksnya untukmu.

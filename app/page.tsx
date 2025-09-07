@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main
       className="flex min-h-screen w-full flex-col items-center justify-between p-6 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/bg2.jpg')" }}
+      style={{ backgroundColor: "Highlight" }}
     >
       <div className="w-full max-w-2xl mx-auto text-center bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
         {/* Logo */}

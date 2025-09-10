@@ -161,8 +161,8 @@ const FileUpload = ({
       />
       <Card>
         <CardHeader>
-          <CardTitle>File Upload</CardTitle>
-          <CardDescription>Drag and drop File</CardDescription>
+          <CardTitle>Upload File </CardTitle>
+          <CardDescription>Tarik dan lepas File</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
           <div

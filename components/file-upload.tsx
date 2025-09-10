@@ -161,7 +161,7 @@ const FileUpload = ({
       />
       <Card>
         <CardHeader>
-          <CardTitle>Upload File </CardTitle>
+          <CardTitle>Unggah File </CardTitle>
           <CardDescription>Tarik dan lepas File</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
@@ -179,7 +179,7 @@ const FileUpload = ({
             <input {...getInputProps()} />
             <div className="flex flex-col items-center justify-center text-center">
               <Upload className="size-8 mb-2 text-muted-foreground " />
-              <p className="text-sm font-medium">Upload file mu disini</p>
+              <p className="text-sm font-medium">Unggah file mu disini</p>
             </div>
           </div>
 
